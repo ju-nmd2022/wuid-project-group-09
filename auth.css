@@ -1,0 +1,66 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2rem 1fr 2rem;
+    grid-template-areas:
+      "header header header"
+      ". content ."
+      "footer footer footer";
+    min-height: 100vh;
+    justify-items: center;
+    /* align-items: center; */
+    align-content: space-between;
+  }
+
+.header {
+    /* background-color: aquamarine; */
+    grid-area: header;
+    font-size: large;
+    padding-top: 1em;
+  }
+  
+.content {
+    /* background-color: blueviolet; */
+    grid-area: content;
+    padding-top: 15%;
+  }
+  
+.footer {
+    grid-area: footer;
+    font-size:larger;
+  }
+
+.submit-form {
+    padding-bottom: 20%;
+}
+
+.form-container{
+    color: #000000;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #000000;
+    height: auto;
+}
+
+
+/* The following 17 lines of code was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form Accessed: 2022-12-05*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 10px;
+  }
