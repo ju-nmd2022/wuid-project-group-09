@@ -1,0 +1,32 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2rem 1fr 2rem;
+    grid-template-areas:
+      "header header header"
+      "content content content"
+      "footer footer footer";
+    min-height: 100vh;
+    gap: 2rem;
+    row-gap: 2rem;
+}
+.header {
+    background-color: antiquewhite;
+    grid-area: header;
+}
+.content {
+    background-color: rgb(238, 251, 255);
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "product1 product2"
+    "product3 product4";
+    gap: 2rem;
+    justify-items: center;
+}
+.footer {
+    background-color: antiquewhite;
+    grid-area: footer;
+}
