@@ -1,0 +1,126 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2rem 1fr 2rem;
+    grid-template-areas:
+      "header header header"
+      ". content ."
+      "footer footer footer";
+    min-height: 100vh;
+    justify-items: center;
+    align-content: space-between;
+  }
+
+.header {
+    grid-area: header;
+    font-size: large;
+    padding-top: 1em;
+  }
+  
+.content {
+    grid-area: content;
+    padding-top: 15%;
+  }
+  
+.footer {
+    grid-area: footer;
+    font-size:larger;
+  }
+
+/* The following 5 lines of code was adapted from  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cards2 Accessed: 2022-12-05*/
+.content-box {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.word-container {
+    padding: 2px 16px;
+  }
+
+hr {
+    width: 70vw;
+    
+}
+
+td {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+th {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+button {
+    background-color: #BAD9A6;
+    color: black;
+    padding: 14px 20px;
+    margin: 10% 29%;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    border-radius: 10px;
+  }
+
+/* The following 8 lines of code was adapted from  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form Accessed: 2022-12-08*/
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+input[type=checkbox]{
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+label {
+    font-size: small;
+}
+
+/* The following 5 lines of code was adapted from  https://www.w3schools.com/howto/howto_css_coming_soon.asp Accessed: 2022-12-08*/
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    border-radius: 20px;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+@media screen and (min-width: 846px) and (max-width: 2500px) {
+    button {
+        background-color: #BAD9A6;
+        color: black;
+        padding: 14px 20px;
+        margin: 8% 75%;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        border-radius: 10px;
+      }
+    label {
+        font-size: larger;
+    }
+}

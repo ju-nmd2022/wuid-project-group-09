@@ -8,19 +8,16 @@
       "footer footer footer";
     min-height: 100vh;
     justify-items: center;
-    /* align-items: center; */
     align-content: space-between;
   }
 
 .header {
-    /* background-color: aquamarine; */
     grid-area: header;
     font-size: large;
     padding-top: 1em;
   }
   
 .content {
-    /* background-color: blueviolet; */
     grid-area: content;
     padding-top: 15%;
   }
