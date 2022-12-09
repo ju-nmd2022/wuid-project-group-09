@@ -47,6 +47,7 @@ body {
     width: auto;
     border-radius: 20px;
     margin-bottom: 50px;
+    margin-top: 100px;
 }
 
 .word-container {
@@ -188,4 +189,12 @@ align-content: center;
     label {
         font-size: larger;
     }
+    .content-box {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: auto;
+        border-radius: 20px;
+        margin-bottom: 50px;
+    }
+    
 }
