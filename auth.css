@@ -12,9 +12,9 @@
   }
 
 .header {
+    background-color: #801710;
     grid-area: header;
-    font-size: large;
-    padding-top: 1em;
+    height:fit-content;
   }
   
 .content {
@@ -23,8 +23,8 @@
   }
   
 .footer {
+    background-color: #801710;
     grid-area: footer;
-    font-size:larger;
   }
 
 .submit-form {
@@ -39,6 +39,11 @@
     border-color: #000000;
     height: auto;
     box-shadow: 5px 5px 5px lightslategray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 
@@ -52,7 +57,7 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
   }
 
-button {
+.auth {
     background-color: #000000;
     color: white;
     padding: 14px 20px;
@@ -62,3 +67,58 @@ button {
     width: 80%;
     border-radius: 10px;
   }
+
+
+.ribbon-top {
+    background-color: #801710;
+    padding-top: 0.5rem;
+}
+.ribbon-bottom {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+nav {
+align-content: center;
+}
+.tab {
+    background-color:#ffffff5e;
+    border:#ebebeb5e;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    cursor: pointer;
+    vertical-align: middle;
+    
+}
+
+.search {
+    background-color: #ffffff5e;
+    border: #ebebeb5e;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    border-radius: 1rem;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 8rem;
+
+    
+}
+/*code taken from w3s school*/
+::placeholder {
+    color:#ffffff;
+}
+.vector {
+    vertical-align:middle;
+    margin-left: 1rem;
+    
+}
