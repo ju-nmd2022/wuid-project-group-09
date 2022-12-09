@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     background-color: #80171025;
+    width: 100%;
 }
 .grid {
     display: grid;
@@ -19,6 +20,11 @@ body {
     grid-area: header;
     height:fit-content;
 }
+/*code taken from https://www.w3schools.com/css/css_rwd_images.asp*/
+header-img {
+        width: 100%;
+        height: auto;
+      }
 .ribbon-top {
     background-color: #801710;
     padding-top: 0.5rem;
@@ -29,6 +35,7 @@ body {
 }
 nav {
 align-content: center;
+max-width: 100%;
 }
 .tab {
     background-color:#ffffff5e;
@@ -111,6 +118,7 @@ align-content: center;
 .frame1{
     grid-area: item1;
     position: relative;
+
 }
 
 .frame2 {
@@ -170,4 +178,27 @@ align-content: center;
 }
 .nr{
     margin-left: 4rem;
+}
+@media screen and (max-width:800px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'header'
+        'content'
+        'footer';
+    }
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'item1'
+        'item2'
+        'item3'
+        'item4'
+        'item5'
+        'item6'
+        'item7'
+        'item8'
+        'item9'
+        'item10';
+    }
 }

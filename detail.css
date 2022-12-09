@@ -87,9 +87,8 @@ align-content: center;
     margin-top: 4rem;
     margin-left: 4rem;
     margin-right: 4rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
-
     padding-right: 10rem;
 }
 .headline {
@@ -101,18 +100,22 @@ align-content: center;
 }
 .product-img {
     grid-area: products;
+    padding-top: 2rem;
 }
 .product-info{
     grid-area: product-info;
+    position: relative;
     color:#000000;
+    top: 1.5rem;
 }
 .add-to {
     grid-area: product-info;
+    position:relative;
     background-color: #BAD9A6;
-    margin-left: 10rem;
-    align-tracks: product-info;
-    
-    
+    vertical-align: middle;
+    left: 40rem;
+    bottom: 5rem;
+     
 }
 .footer {
     background-color: #801710;
