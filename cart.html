@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
     <title>Cart - Santa's little helpers</title>
     <link rel="stylesheet" type="text/css" href="checkout.css" />
 </head>
@@ -28,7 +29,7 @@
             <div class="word-container">
                 <h2><b>Order review</b></h2> 
                 <hr>
-                <table>
+                <table id="orderTable">
                     <tr>
                         <td>Sticky Toffee Pudding</td>
                         <td>x1</td>
@@ -36,7 +37,7 @@
                     </tr>
                 </table>
                 <hr>
-                <table>
+                <table id="totalTable">
                     <tr>
                         <td>Sub-total</td>
                         <th>x1</th>
@@ -45,7 +46,7 @@
                 </table>
               </div>
               <a href="checkout.html">
-                <button class="continue-btn" type="submit">Continue</button>
+                <button id="continueBtn" class="continue-btn" type="submit">Continue</button>
             </a>
         </main>
       </div>
