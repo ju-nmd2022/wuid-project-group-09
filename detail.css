@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+    background-color: #80171025;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2rem 1fr 2rem;
+    grid-template-areas:
+      "header header header"
+      "content content content"
+      "footer footer footer";
+    min-height: 100vh;
+    gap: 2rem;
+    row-gap: 2rem;
+}
+.header {
+    background-color: #801710;
+    grid-area: header;
+    height:fit-content;
+}
+.ribbon-top {
+    background-color: #801710;
+    padding-top: 0.5rem;
+}
+.ribbon-bottom {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+nav {
+align-content: center;
+}
+.tab {
+    background-color:#ffffff5e;
+    border:#ebebeb5e;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    cursor: pointer;
+    vertical-align: middle;
+    
+}
+
+.search {
+    background-color: #ffffff5e;
+    border: #ebebeb5e;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    border-radius: 1rem;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 8rem;
+
+    
+}
+/*code taken from w3s school*/
+::placeholder {
+    color:#ffffff;
+}
+.vector {
+    vertical-align:middle;
+    margin-left: 1rem;  
+}
+
+.content {
+    background-color: #ffffff62;
+    grid-area: content;
+    display: grid;
+    border-radius: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "products product-info"
+    "products product-info";
+    row-gap: 1rem;
+    height: fit-content;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    padding-right: 10rem;
+}
+.headline {
+    grid-area: products;
+    margin-top: 30rem; 
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: x-small;  
+}
+.product-img {
+    grid-area: products;
+}
+.product-info{
+    grid-area: product-info;
+    color:#000000;
+}
+.add-to {
+    grid-area: product-info;
+    background-color: #BAD9A6;
+    margin-left: 10rem;
+    align-tracks: product-info;
+    
+    
+}
+.footer {
+    background-color: #801710;
+    grid-area: footer;
+    height: fit-content;
+    vertical-align: middle;
+    color: #ffffff;
+}
+.location{
+    margin-left: 4rem;
+}
+.nr{
+    margin-left: 4rem;
+}
