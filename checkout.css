@@ -12,9 +12,9 @@
   }
 
 .header {
+    background-color: #801710;
     grid-area: header;
-    font-size: large;
-    padding-top: 1em;
+    height:fit-content;
   }
   
 .content {
@@ -23,8 +23,8 @@
   }
   
 .footer {
+    background-color: #801710;
     grid-area: footer;
-    font-size:larger;
   }
 
 /* The following 5 lines of code was adapted from  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cards2 Accessed: 2022-12-05*/
@@ -60,7 +60,7 @@ table {
     border-collapse: collapse;
 }
 
-button {
+.continue-btn {
     background-color: #BAD9A6;
     color: black;
     padding: 14px 20px;
@@ -109,8 +109,62 @@ label {
     padding-right: 10vw;
   }
 
+  .ribbon-top {
+    background-color: #801710;
+    padding-top: 0.5rem;
+}
+.ribbon-bottom {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+nav {
+align-content: center;
+}
+.tab {
+    background-color:#ffffff5e;
+    border:#ebebeb5e;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    cursor: pointer;
+    vertical-align: middle;
+    
+}
+
+.search {
+    background-color: #ffffff5e;
+    border: #ebebeb5e;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    border-radius: 1rem;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 8rem;
+
+    
+}
+
+::placeholder {
+    color:#ffffff;
+}
+.vector {
+    vertical-align:middle;
+    margin-left: 1rem;
+    
+}
+
 @media screen and (min-width: 846px) and (max-width: 2500px) {
-    button {
+    .continue-btn {
         background-color: #BAD9A6;
         color: black;
         padding: 14px 20px;
