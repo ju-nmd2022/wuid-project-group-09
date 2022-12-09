@@ -110,7 +110,9 @@ align-content: center;
 }
 .frame1{
     grid-area: item1;
+    position: relative;
 }
+
 .frame2 {
     grid-area: item2;
     position:relative;
@@ -147,6 +149,14 @@ align-content: center;
     grid-area: item10;
     position:relative;
     margin-right: 10rem;
+}
+.frame-text {
+    position:relative;
+    bottom: 5.5rem;
+    left: 8.7rem;
+    vertical-align: middle;
+    font-size: large;
+    
 }
 .footer {
     background-color: #801710;
