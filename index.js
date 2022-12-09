@@ -18,25 +18,25 @@ if (window.location.href.includes("detail.html")) {
         const orderTable = document.getElementById("orderTable");
         const totalTable = document.getElementById("totalTable");
 
+        continueBtn.addEventListener("click", function () {
+            if (clickAdd == true) {
+                clickAdd = false;
+                saveToLocalStorage();
+                console.log(kuy)
+            }
+        });
+
         readFromLocalStorage();
         if (clickAdd) {
             continueBtn.style.visibility = "visible";
             orderTable.style.visibility = "visible";
             totalTable.style.visibility = "visible";
         } else if (clickAdd === false) {
+            alert("You don't have any items in the cart yet!!");
             continueBtn.style.visibility = "hidden";
             orderTable.style.visibility = "hidden";
             totalTable.style.visibility = "hidden";
-            alert("You don't have any items in the cart yet!!");
         }
-    });
-} else if (window.location.href.includes("checkout.html")) {
-    window.addEventListener("load", function () {
-        const finishBtn = document.getElementById("finishBtn");
-
-        finishBtn.addEventListener("click", function () {
-            localStorage.clear();
-        });
     });
 }
 
