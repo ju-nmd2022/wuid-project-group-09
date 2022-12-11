@@ -30,13 +30,18 @@ button:hover {
         height: auto;
         position: relative;
       }
-.header-img .logotype {
+/*       code adapted from https://www.youtube.com/@KevinPowell
+ */.header-img .logotype {
     position:absolute;
+    font-size: 12vw;
+    font-weight: bolder;
+    background-image: url(https://unsplash.com/photos/SG59-rbcNRg/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8Z29sZHxlbnwwfDB8fHwxNjcwNzg5NzE2&force=true&w=640);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    -webkit-backdrop-filter: blur(6px) saturate(1.8);
-    backdrop-filter: blur(6px) saturate(1.8);
     animation-name: Logotype;
     animation-duration: 4s;
     
@@ -224,9 +229,9 @@ max-width: 100%;
 }
 @keyframes Logotype {
     from {
-        transform: translate(-1000px);
-        }
+        opacity: 0;;
+    }
     to {
-        transform: translate(0px);
-        }  
+        opacity: 1;        
+    }  
 }
