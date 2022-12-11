@@ -113,7 +113,7 @@ label {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 #ffffff62;
     transition: 0.3s;
     width: auto;
     border-radius: 20px;
@@ -121,6 +121,7 @@ label {
     padding-bottom: 10vw;
     padding-left: 10vw;
     padding-right: 10vw;
+    background-color:#ffffff62;
   }
 
   .ribbon-top {
