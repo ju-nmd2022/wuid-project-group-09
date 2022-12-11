@@ -47,7 +47,7 @@ body {
     width: auto;
     border-radius: 20px;
     margin-bottom: 50px;
-    /* margin-top: 350px; */
+    margin-top: 350px;
 }
 
 .word-container {
@@ -106,24 +106,6 @@ label {
     font-size: small;
 }
 
-/* The following 5 lines of code was adapted from  https://www.w3schools.com/howto/howto_css_coming_soon.asp Accessed: 2022-12-08*/
-.middle {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    box-shadow: 0 4px 8px 0 #ffffff62;
-    transition: 0.3s;
-    width: auto;
-    border-radius: 20px;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    background-color:#ffffff62;
-  }
-
 .ribbon-top {
     background-color: #801710;
     padding-top: 0.5rem;
@@ -181,7 +163,7 @@ padding-bottom: 0.5rem;
     
 }
 
-@media screen and (min-width: 846px) and (max-width: 4500px) {
+@media screen and (min-width: 846px) and (max-width: 2500px) {
     .continue-btn {
         background-color: #BAD9A6;
         color: rgb(255, 255, 255);
@@ -201,6 +183,7 @@ padding-bottom: 0.5rem;
         width: auto;
         border-radius: 20px;
         margin-bottom: 50px;
+        margin-top: 50px;
     }
     .tab {
       background-color:#ffffff5e;
@@ -230,23 +213,6 @@ padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-left: 8rem;
-    }
-
-    .middle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      box-shadow: 0 4px 8px 0 #ffffff62;
-      transition: 0.3s;
-      width: auto;
-      border-radius: 20px;
-      padding-top: 10vw;
-      padding-bottom: 10vw;
-      padding-left: 10vw;
-      padding-right: 10vw;
-      background-color:#ffffff62;
     }
     
 }
