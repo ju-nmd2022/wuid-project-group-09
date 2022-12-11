@@ -6,7 +6,8 @@ body {
 }
 .grid {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+/*  grid-template-columns: 1fr 4fr 1fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     grid-template-rows: 2rem 1fr 2rem;
     grid-template-areas:
       "header header header"
@@ -21,11 +22,25 @@ body {
     grid-area: header;
     height:fit-content;
 }
+button:hover {
+    color: #bad9a6;
+}
 /*code taken from https://www.w3schools.com/css/css_rwd_images.asp*/
 header-img {
         width: 100%;
         height: auto;
+        position: relative;
       }
+.header-img .logotype {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border: solid;
+    border-width: 20px;
+    background-color: rgba(186, 217, 166, 0.6);
+    border-color: rgba(0, 0, 0, 0.1);
+}
 .ribbon-top {
     background-color: #801710;
     padding-top: 0.5rem;
