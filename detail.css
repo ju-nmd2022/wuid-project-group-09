@@ -2,7 +2,6 @@
 body {
     margin: 0px;
     background-color: #80171025;
-    width: 100%;
 }
 .grid {
     display: grid;
@@ -21,11 +20,6 @@ body {
     grid-area: header;
     height:fit-content;
 }
-/*code taken from https://www.w3schools.com/css/css_rwd_images.asp*/
-header-img {
-        width: 100%;
-        height: auto;
-      }
 .ribbon-top {
     background-color: #801710;
     padding-top: 0.5rem;
@@ -36,7 +30,6 @@ header-img {
 }
 nav {
 align-content: center;
-max-width: 100%;
 }
 .tab {
     background-color:#ffffff5e;
@@ -81,16 +74,23 @@ max-width: 100%;
 }
 
 .content {
+    background-color: #ffffff62;
     grid-area: content;
     display: grid;
+    border-radius: 4rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-    "products products"
-    "products products";
+    "products product-info"
+    "products product-info";
     row-gap: 1rem;
     height: fit-content;
-    padding-top: 10rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-right: 10rem;
 }
 .headline {
     grid-area: products;
@@ -99,73 +99,24 @@ max-width: 100%;
     margin-right: 2rem;
     font-size: x-small;  
 }
-.products {
+.product-img {
     grid-area: products;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "item1 item2"
-    "item3 item4"
-    "item5 item6"
-    "item7 item8"
-    "item9 item10";
-    row-gap: 1rem;
+    padding-top: 2rem;
+}
+.product-info{
+    grid-area: product-info;
     position: relative;
-    padding-top: 35rem; 
-    padding-left: 12rem;
-
+    color:#000000;
+    top: 1.5rem;
 }
-.frame1{
-    grid-area: item1;
-    position: relative;
-
-}
-
-.frame2 {
-    grid-area: item2;
+.add-to {
+    grid-area: product-info;
     position:relative;
-    margin-right: 10rem;
-}
-.frame3 {
-    grid-area: item3;
-}
-.frame4 {
-    grid-area: item4;
-    position:relative;
-    margin-right: 10rem;
-}
-.frame5{
-    grid-area: item5;
-}
-.frame6 {
-    grid-area: item6;
-    position:relative;
-    margin-right: 10rem;
-}
-.frame7 {
-    grid-area: item7;
-}
-.frame8 {
-    grid-area: item8;
-    position:relative;
-    margin-right: 10rem;
-}
-.frame9 {
-    grid-area: item9;
-}
-.frame10 {
-    grid-area: item10;
-    position:relative;
-    margin-right: 10rem;
-}
-.frame-text {
-    position:relative;
-    bottom: 5.5rem;
-    left: 8.7rem;
+    background-color: #BAD9A6;
     vertical-align: middle;
-    font-size: large;
-    
+    left: 40rem;
+    bottom: 5rem;
+     
 }
 .footer {
     background-color: #801710;
@@ -174,32 +125,9 @@ max-width: 100%;
     vertical-align: middle;
     color: #ffffff;
 }
-.location{
+.location {
     margin-left: 4rem;
 }
-.nr{
+.nr {
     margin-left: 4rem;
-}
-@media screen and (max-width:800px) {
-    .grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        'header'
-        'content'
-        'footer';
-    }
-    .content {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        'item1'
-        'item2'
-        'item3'
-        'item4'
-        'item5'
-        'item6'
-        'item7'
-        'item8'
-        'item9'
-        'item10';
-    }
 }

@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+  background-color: #80171025;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -23,17 +27,27 @@
   }
   
 .footer {
-    background-color: #801710;
-    grid-area: footer;
+  background-color: #801710;
+  grid-area: footer;
+  height: fit-content;
+  vertical-align: middle;
+  color: #ffffff;
   }
+  .location {
+    margin-left: 2rem;
+}
+.nr {
+    margin-left: 2rem;
+}
 
 /* The following 5 lines of code was adapted from  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cards2 Accessed: 2022-12-05*/
 .content-box {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color:#ffffff62;
     transition: 0.3s;
     width: auto;
     border-radius: 20px;
     margin-bottom: 50px;
+    margin-top: 100px;
 }
 
 .word-container {
@@ -136,22 +150,20 @@ align-content: center;
     vertical-align: middle;
     
 }
-
+  
 .search {
-    background-color: #ffffff5e;
-    border: #ebebeb5e;
-    font-size: medium;
-    font-family:'Times New Roman', Times, serif;
-    color: #ffffff;
-    border-radius: 1rem;
-    border-radius: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin-left: 8rem;
-
-    
+  background-color: #ffffff5e;
+  border: #ebebeb5e;
+  font-size: medium;
+  font-family:'Times New Roman', Times, serif;
+  color: #ffffff;
+  border-radius: 1rem;
+  border-radius: 1rem;
+  padding-left: 2rem;
+  padding-right: 6rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 8rem;  
 }
 
 ::placeholder {
@@ -166,7 +178,7 @@ align-content: center;
 @media screen and (min-width: 846px) and (max-width: 2500px) {
     .continue-btn {
         background-color: #BAD9A6;
-        color: black;
+        color: rgb(255, 255, 255);
         padding: 14px 20px;
         margin: 8% 75%;
         border: none;
@@ -177,4 +189,12 @@ align-content: center;
     label {
         font-size: larger;
     }
+    .content-box {
+        box-shadow:#ffffff62;;
+        transition: 0.3s;
+        width: auto;
+        border-radius: 20px;
+        margin-bottom: 50px;
+    }
+    
 }

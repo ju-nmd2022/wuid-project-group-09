@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
     <title>Cart - Santa's little helpers</title>
     <link rel="stylesheet" type="text/css" href="checkout.css" />
+   
 </head>
 <body>
     <main class="container">
@@ -14,12 +16,12 @@
         <nav>            
             <a href="index.html"><button class="tab head">Home</button></a>
             <a href="products.html"><button class="tab head">Products</button></a>
-            <a href="offers.html"><button class="tab head">Offers</button></a> 
-            <a href="reviews.html"><button class="tab head">Reviews</button></a>
-            <a href="contact.html"><button class="tab head">Contact</button></a> 
+            <a href="index.html"><button class="tab head">Offers</button></a> 
+            <a href="index.html"><button class="tab head">Reviews</button></a>
+            <a href="index.html"><button class="tab head">Contact</button></a> 
             <input placeholder="Search" class="search head">  
             <a href="login.html"><img src="vector-img/icons8-user-48.png" style="max-height: 25px;" class="vector head"></a>
-            <a href="contact.html"><img src="vector-img/icons8-sleigh-64.png" style="max-height: 30px;" class="vector head"></a>
+            <a href="cart.html"><img src="vector-img/icons8-sleigh-64.png" style="max-height: 30px;" class="vector head"></a>
         </nav> 
              <img src="homepage-img/golden-ribbon.PNG" style="max-width: 100%;" class="ribbon-bottom head">
       </div>
@@ -28,29 +30,34 @@
             <div class="word-container">
                 <h2><b>Order review</b></h2> 
                 <hr>
-                <table>
+                <table id="orderTable">
                     <tr>
-                        <td>Sticky Toffee Pudding</td>
-                        <td>x1</td>
-                        <td>49:-</td>
+                        <td>Brûléed Pecan pie</td>
+                        <td id="total-count"></td>
+                        <td id="total-price"></td>
                     </tr>
                 </table>
                 <hr>
-                <table>
+                <table id="totalTable">
                     <tr>
                         <td>Sub-total</td>
-                        <th>x1</th>
-                        <th>49:-</th>
+                        <th id="t-count"></th>
+                        <th id="t-price"></th>
                     </tr>
                 </table>
               </div>
               <a href="checkout.html">
-                <button class="continue-btn" type="submit">Continue</button>
+                <button id="continueBtn" class="continue-btn" type="submit">Continue</button>
             </a>
         </main>
       </div>
       <div class="footer">
         <img src="homepage-img/golden-ribbon.PNG" style="max-width: 100%;" class="ribbon-top"> 
+        <div class="info">
+          <div class="location"><p>Where to find us: <br>
+          221B Bakerstreet</p></div>
+          <div class="nr"><p>Reach us by phone: <br>
+              07-XXXXXXX</p></div>
       </div>
     </main>
   

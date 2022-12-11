@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
     <title>Checkout - Santa's little helpers</title>
     <link rel="stylesheet" type="text/css" href="checkout.css" />
 </head>
@@ -19,7 +20,7 @@
             <a href="contact.html"><button class="tab head">Contact</button></a> 
             <input placeholder="Search" class="search head">  
             <a href="login.html"><img src="vector-img/icons8-user-48.png" style="max-height: 25px;" class="vector head"></a>
-            <a href="contact.html"><img src="vector-img/icons8-sleigh-64.png" style="max-height: 30px;" class="vector head"></a>
+            <a href="cart.html"><img src="vector-img/icons8-sleigh-64.png" style="max-height: 30px;" class="vector head"></a>
         </nav> 
              <img src="homepage-img/golden-ribbon.PNG" style="max-width: 100%;" class="ribbon-bottom head">
       </div>
@@ -30,17 +31,17 @@
                 <hr>
                 <table>
                     <tr>
-                        <td>Sticky Toffee Pudding</td>
-                        <td>x1</td>
-                        <td>49:-</td>
+                        <td>Brûléed Pecan Pie</td>
+                        <td id="total-count"></td>
+                        <td id="total-price"></td>
                     </tr>
                 </table>
                 <hr>
                 <table>
                     <tr>
                         <td>Sub-total</td>
-                        <th>x1</th>
-                        <th>49:-</th>
+                        <th id="t-count"></th>
+                        <th id="t-price"></th>
                     </tr>
                 </table>
               </div>
@@ -80,7 +81,7 @@
                         I want Santa’s little helpers to send me offers and news. </label><br>
                 <hr>
                 <a href="thankyou.html">
-                    <button class="continue-btn" type="submit">Finish Order</button>
+                    <button id="finishBtn" class="continue-btn" type="submit">Finish Order</button>
                 </a>
               </div>
         </main>
@@ -88,6 +89,11 @@
       </div>
       <div class="footer">
         <img src="homepage-img/golden-ribbon.PNG" style="max-width: 100%;" class="ribbon-top"> 
+        <div class="info">
+            <div class="location"><p>Where to find us: <br>
+            221B Bakerstreet</p></div>
+            <div class="nr"><p>Reach us by phone: <br>
+                07-XXXXXXX</p></div>
       </div>
     </main>
   

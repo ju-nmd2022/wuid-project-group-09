@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css" class="css">
+    <link rel="stylesheet" href="detail.css" class="css">
+    <script src="index.js"></script>
     <title>Home - Santa's little helpers</title>
 </head>
 <body>
@@ -17,17 +18,39 @@
                 <a href="products.html"><button class="tab head">Products</button></a>
                 <a href="index.html"><button class="tab head">Offers</button></a> 
                 <a href="index.html"><button class="tab head">Reviews</button></a>
-                <a href="index.html"><button class="tab head">Contact</button></a> 
+                <a href="index.html"><button class="tab head">About Us</button></a> 
                 <input type="text" placeholder="Search" class="search head">  
                 <a href="login.html"><img src="vector-img/icons8-user-48.png" style="max-height: 25px;" class="vector head"></a>
                 <a href="cart.html"><img src="vector-img/icons8-sleigh-64.png" style="max-height: 30px;" class="vector head"></a>
             </nav> 
                  <img src="homepage-img/golden-ribbon.PNG" style="max-width: 100%;" class="ribbon-bottom head">
-                 <div class="header-img"><img src="homepage-img/headerl.png" style="max-width: 100%;" alt=""></div>
         </header>
     </div>
     <div class="content">
-        <div class="headline">
-            <h1>Made with care</h1>
-            <hr>
+        <div class="product-img">
+            <div class="frame1"><img src="product-img/pecan.png" style="max-height: 400px"></div>
         </div>
+        <div class="product-info">
+            <h2>Brûléed Pecan Pie</h2>
+            <p>Mrs Claus' pecan pie recipe has gone down through generations of Santas. 
+               The extravagant brûléed crust is sure to impress your guest's eyes and 
+               tastebuds. Satisfy your Christmas cravings with the perfect combination of 
+               sweet and salty deliciousness. </p>
+        </div>
+        <div class="add">
+            <button id="add" class="tab add-to">Add to cart </button>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="homepage-img/golden-ribbon.PNG" style="max-width: 100%;" class="ribbon-top">
+        <div class="info">
+        <div class="location"><p>Where to find us: <br>
+        221B Bakerstreet</p></div>
+        <div class="nr"><p>Reach us by phone: <br>
+            07-XXXXXXX</p></div>
+        </div> 
+    </div>
+    </main>
+    <script src="add.js"></script>
+</body>
+</html>
