@@ -26,7 +26,7 @@ button:hover {
     color: #bad9a6;
 }
 /*code taken from https://www.w3schools.com/css/css_rwd_images.asp*/
-header-img {
+.header-img {
         width: 100%;
         height: auto;
         position: relative;
@@ -36,11 +36,16 @@ header-img {
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    border: solid;
+    -webkit-backdrop-filter: blur(6px) saturate(1.8);
+    backdrop-filter: blur(6px) saturate(1.8);
+    animation-name: Logotype;
+    animation-duration: 4s;
+    
+/*     border: solid;
     border-width: 20px;
     background-color: rgba(186, 217, 166, 0.6);
     border-color: rgba(0, 0, 0, 0.1);
-}
+ */}
 .ribbon-top {
     background-color: #801710;
     padding-top: 0.5rem;
@@ -217,4 +222,12 @@ max-width: 100%;
         'item9'
         'item10';
     }
+}
+@keyframes Logotype {
+    from {
+        transform: translate(-1000px);
+        }
+    to {
+        transform: translate(0px);
+        }  
 }
