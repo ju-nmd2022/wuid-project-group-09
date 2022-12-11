@@ -47,7 +47,7 @@ body {
     width: auto;
     border-radius: 20px;
     margin-bottom: 50px;
-    margin-top: 100px;
+    /* margin-top: 350px; */
 }
 
 .word-container {
@@ -83,7 +83,7 @@ table {
     cursor: pointer;
     width: auto;
     border-radius: 10px;
-  }
+}
 
 /* The following 8 lines of code was adapted from  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form Accessed: 2022-12-08*/
 input[type=text]{
@@ -109,7 +109,7 @@ label {
 /* The following 5 lines of code was adapted from  https://www.w3schools.com/howto/howto_css_coming_soon.asp Accessed: 2022-12-08*/
 .middle {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -124,47 +124,52 @@ label {
     background-color:#ffffff62;
   }
 
-  .ribbon-top {
+.ribbon-top {
     background-color: #801710;
     padding-top: 0.5rem;
 }
+
 .ribbon-bottom {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
 }
+
 nav {
-align-content: center;
+  align-content: center;
+
 }
+
 .tab {
-    background-color:#ffffff5e;
-    border:#ebebeb5e;
-    border-radius: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin-left: 1rem;
-    font-size: medium;
-    font-family:'Times New Roman', Times, serif;
-    color: #ffffff;
-    cursor: pointer;
-    vertical-align: middle;
-    
-}
-  
-.search {
-  background-color: #ffffff5e;
-  border: #ebebeb5e;
+  background-color:#ffffff5e;
+  border:#ebebeb5e;
+  border-radius: 1rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: medium;
   font-family:'Times New Roman', Times, serif;
   color: #ffffff;
-  border-radius: 1rem;
-  border-radius: 1rem;
-  padding-left: 2rem;
-  padding-right: 6rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-left: 8rem;  
+  cursor: pointer;
+  vertical-align: middle;
+  
+}
+.search {
+background-color: #ffffff5e;
+border: #ebebeb5e;
+font-size: medium;
+font-family:'Times New Roman', Times, serif;
+color: #ffffff;
+border-radius: 1rem;
+border-radius: 1rem;
+padding-left: 2rem;
+padding-right: 6rem;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+
 }
 
 ::placeholder {
@@ -176,7 +181,7 @@ align-content: center;
     
 }
 
-@media screen and (min-width: 846px) and (max-width: 2500px) {
+@media screen and (min-width: 846px) and (max-width: 4500px) {
     .continue-btn {
         background-color: #BAD9A6;
         color: rgb(255, 255, 255);
@@ -196,6 +201,52 @@ align-content: center;
         width: auto;
         border-radius: 20px;
         margin-bottom: 50px;
+    }
+    .tab {
+      background-color:#ffffff5e;
+      border:#ebebeb5e;
+      border-radius: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      margin-left: 1rem;
+      font-size: medium;
+      font-family:'Times New Roman', Times, serif;
+      color: #ffffff;
+      cursor: pointer;
+      vertical-align: middle;  
+    }
+    .search {
+    background-color: #ffffff5e;
+    border: #ebebeb5e;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    border-radius: 1rem;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 8rem;
+    }
+
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      box-shadow: 0 4px 8px 0 #ffffff62;
+      transition: 0.3s;
+      width: auto;
+      border-radius: 20px;
+      padding-top: 10vw;
+      padding-bottom: 10vw;
+      padding-left: 10vw;
+      padding-right: 10vw;
+      background-color:#ffffff62;
     }
     
 }
