@@ -30,17 +30,17 @@ button:hover {
         height: auto;
         position: relative;
       }
-/*       code adapted from https://www.youtube.com/@KevinPowell
- */.header-img .logotype {
+/*       code adapted from https://www.youtube.com/@KevinPowell*/
+.header-img .logotype {
     position:absolute;
-    font-size: 12vw;
+    font-size: 5vw;
     font-weight: bolder;
     background-image: url(https://unsplash.com/photos/SG59-rbcNRg/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8Z29sZHxlbnwwfDB8fHwxNjcwNzg5NzE2&force=true&w=640);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    top:50%;
-    left:50%;
+    top: 90%;
+    left: 5%;
     transform:translate(-50%,-50%);
     animation-name: Logotype;
     animation-duration: 4s;
@@ -50,6 +50,20 @@ button:hover {
     background-color: rgba(186, 217, 166, 0.6);
     border-color: rgba(0, 0, 0, 0.1);
  */}
+ .nr .logotype { 
+    position:absolute;
+    font-size: 5vw;
+    font-weight: bolder;
+    background-image: url(https://unsplash.com/photos/SG59-rbcNRg/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8Z29sZHxlbnwwfDB8fHwxNjcwNzg5NzE2&force=true&w=640);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    top: 90%;
+    left: 5%;
+    transform:translate(-50%,-50%);
+    animation-name: Logotype;
+    animation-duration: 4s;
+ }
 .ribbon-top {
     background-color: #801710;
     padding-top: 0.5rem;
