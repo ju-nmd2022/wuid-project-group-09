@@ -149,7 +149,7 @@ nav {
   row-gap: 1rem;
   position: relative;
   padding-top: 35rem;
-  padding-left: 2rem;
+  padding-left: rem;
 }
 .frame1 {
   grid-area: item1;
@@ -159,7 +159,7 @@ nav {
 .frame2 {
   grid-area: item2;
   position: relative;
-  margin-right: 10rem;
+  margin-right: rem;
 }
 .frame3 {
   grid-area: item3;
@@ -167,7 +167,7 @@ nav {
 .frame4 {
   grid-area: item4;
   position: relative;
-  margin-right: 10rem;
+  margin-right: rem;
 }
 .frame5 {
   grid-area: item5;
@@ -175,7 +175,7 @@ nav {
 .frame6 {
   grid-area: item6;
   position: relative;
-  margin-right: 10rem;
+  margin-right: rem;
 }
 .frame7 {
   grid-area: item7;
@@ -183,7 +183,7 @@ nav {
 .frame8 {
   grid-area: item8;
   position: relative;
-  margin-right: 10rem;
+  margin-right: rem;
 }
 .frame9 {
   grid-area: item9;
@@ -191,7 +191,7 @@ nav {
 .frame10 {
   grid-area: item10;
   position: relative;
-  margin-right: 10rem;
+  margin-right: rem;
 }
 .frame-text {
   position: relative;
