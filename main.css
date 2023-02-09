@@ -150,6 +150,7 @@ nav {
   position: relative;
   padding-top: 35rem;
   padding-left: rem;
+  max-width: 100vw;
 }
 .frame1 {
   grid-area: item1;
@@ -234,6 +235,15 @@ nav {
       "item8"
       "item9"
       "item10";
+  }
+  .frame-text {
+    max-width: 50vw;
+  }
+  .header {
+    max-width: 100vw;
+  }
+  .footer {
+    max-width: 100vw;
   }
 }
 @keyframes Logotype {
