@@ -6,7 +6,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1fr 0.8fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
   grid-template-areas:
     "nav nav nav nav"
     "sidebar main main main"
@@ -47,14 +47,14 @@ footer {
   background-color: rgb(154, 247, 136);
   grid-area: footer;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 390px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr;
     grid-template-areas:
       "nav"
-      "main"
       "sidebar"
+      "main"
       "item1"
       "item2"
       "item3"
