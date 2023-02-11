@@ -1,4 +1,5 @@
 body {
+  background-color: #80171025;
   max-width: 100%;
   max-height: 100vh;
 
@@ -19,8 +20,9 @@ body {
 }
 
 nav {
-  background-color: rgb(7, 235, 235);
+  background-color: #801710;
   grid-area: nav;
+  vertical-align: middle;
 }
 main {
   background-color: rgb(0, 81, 255);
@@ -56,14 +58,16 @@ main > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 1rem;
 }
 .items {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 1rem;
 }
 
-/*navigationbar tabs*/
+/*navigationbar*/
 .tab {
   background-color: #ffffff5e;
   border: #ebebeb5e;
@@ -73,11 +77,14 @@ main > img {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-left: 1rem;
+  margin-bottom: 0.2rem;
   font-size: medium;
   font-family: "Times New Roman", Times, serif;
   color: #ffffff;
   cursor: pointer;
   vertical-align: middle;
+}
+.vector {
 }
 
 /*responsivness*/
@@ -101,8 +108,16 @@ main > img {
   .tab {
     display: none;
   }
+  .menue {
+    align-content: center;
+  }
   .menue-list {
     display: none;
+    list-style: none;
+    background-color: #ffffff62;
+    border-radius: 1.2rem;
+    list-style-position: outside;
+    color: rgb(242, 248, 253);
   }
   #menue-toggle:checked ~ .menue-list {
     display: block;
@@ -122,6 +137,10 @@ main > img {
       "item2"
       "item3"
       "item4";
+    row-gap: 2rem;
+  }
+  .item1 .item2 .item3 .item4 {
+    column-gap: 4rem;
   }
   main {
     display: none;
@@ -131,6 +150,11 @@ main > img {
   }
   .menue-list {
     display: none;
+    list-style: none;
+    background-color: #ffffff62;
+    border-radius: 1.2rem;
+    list-style-position: outside;
+    color: rgb(242, 248, 253);
   }
   #menue-toggle:checked ~ .menue-list {
     display: block;
