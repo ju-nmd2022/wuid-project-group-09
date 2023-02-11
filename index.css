@@ -89,6 +89,7 @@ main > img {
   float: right;
   padding-right: 1rem;
   padding-top: 0.3rem;
+  padding-left: 1rem;
 }
 .login {
   float: right;
@@ -96,8 +97,48 @@ main > img {
   padding-top: 0.5rem;
 }
 
+footer > p {
+  color: #ffffff;
+  padding-left: 1rem;
+}
+
 /*responsivness*/
 @media only screen and (min-width: 673px) {
+  .search-bar {
+    float: right;
+  }
+  .search-icon {
+    padding-top: 0.7rem;
+  }
+  .search {
+    display: none;
+    float: right;
+    background-color: #ffffff5e;
+    border: #ebebeb5e;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 0.2rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+    margin-right: 1rem;
+    font-size: small;
+    font-family: "Times New Roman", Times, serif;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+
+  /*code taken from w3s school*/
+  ::placeholder {
+    color: #ffffff;
+  }
+
+  #search-toggle:checked ~ .search {
+    display: block;
+  }
+  #search-toggle {
+    display: none;
+  }
   .menue {
     display: none;
   }
@@ -133,6 +174,38 @@ main > img {
   }
   #menue-toggle {
     display: none;
+  }
+  .search-bar {
+    float: right;
+  }
+  .search-icon {
+    padding-top: 0.7rem;
+  }
+  .search {
+    display: none;
+    float: right;
+    background-color: #ffffff5e;
+    border: #ebebeb5e;
+    border-radius: 1rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: medium;
+    font-family: "Times New Roman", Times, serif;
+    color: #ffffff;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  #search-toggle:checked ~ .search {
+    display: block;
+  }
+  #search-toggle {
+    display: none;
+  }
+  .menue-icon {
   }
 }
 @media only screen and (max-width: 480px) {
@@ -172,6 +245,36 @@ main > img {
     display: none;
   }
   .tab {
+    display: none;
+  }
+  .search-bar {
+    float: right;
+  }
+  .search-icon {
+    padding-top: 0.7rem;
+  }
+  .search {
+    display: none;
+    float: right;
+    background-color: #ffffff5e;
+    border: #ebebeb5e;
+    border-radius: 1rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: medium;
+    font-family: "Times New Roman", Times, serif;
+    color: #ffffff;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  #search-toggle:checked ~ .search {
+    display: block;
+  }
+  #search-toggle {
     display: none;
   }
 }
