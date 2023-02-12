@@ -25,27 +25,21 @@ nav {
   vertical-align: middle;
 }
 main {
-  background-color: rgb(0, 81, 255);
   grid-area: main;
 }
 .sidebar {
-  background-color: aquamarine;
   grid-area: sidebar;
 }
 .item1 {
-  background-color: rgb(0, 255, 136);
   grid-area: item1;
 }
 .item2 {
-  background-color: rgb(245, 107, 107);
   grid-area: item2;
 }
 .item3 {
-  background-color: rgb(247, 109, 240);
   grid-area: item3;
 }
 .item4 {
-  background-color: rgba(255, 255, 255, 0);
   grid-area: item4;
 }
 footer {
@@ -121,7 +115,6 @@ footer > p {
     padding-bottom: 0.5rem;
     margin-top: 0.3rem;
     margin-bottom: 0.2rem;
-    margin-right: 1rem;
     font-size: small;
     font-family: "Times New Roman", Times, serif;
     cursor: pointer;
@@ -187,18 +180,22 @@ footer > p {
     background-color: #ffffff5e;
     border: #ebebeb5e;
     border-radius: 1rem;
-    padding-right: 2rem;
-    padding-left: 1rem;
     padding-top: 0.5rem;
+    padding-left: 0.2rem;
     padding-bottom: 0.5rem;
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
     margin-bottom: 0.2rem;
-    font-size: medium;
+    font-size: small;
     font-family: "Times New Roman", Times, serif;
-    color: #ffffff;
     cursor: pointer;
     vertical-align: middle;
   }
+
+  /*code taken from w3s school*/
+  ::placeholder {
+    color: #ffffff;
+  }
+
   #search-toggle:checked ~ .search {
     display: block;
   }
@@ -259,18 +256,22 @@ footer > p {
     background-color: #ffffff5e;
     border: #ebebeb5e;
     border-radius: 1rem;
-    padding-right: 2rem;
-    padding-left: 1rem;
     padding-top: 0.5rem;
+    padding-left: 0.2rem;
     padding-bottom: 0.5rem;
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
     margin-bottom: 0.2rem;
-    font-size: medium;
+    font-size: small;
     font-family: "Times New Roman", Times, serif;
-    color: #ffffff;
     cursor: pointer;
     vertical-align: middle;
   }
+
+  /*code taken from w3s school*/
+  ::placeholder {
+    color: #ffffff;
+  }
+
   #search-toggle:checked ~ .search {
     display: block;
   }
