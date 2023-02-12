@@ -1,56 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css" class="css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="product.css" class="css" />
     <title>Home - Santa's little helpers</title>
-</head>
-<body>
-    <main class="grid"> 
-    <div class="header">
-        <header>      
-                 <img src="homepage-img/golden-ribbon.PNG" style="max-width: 100%;" class="ribbon-top head">  
-            <nav>            
-                <a href="index.html"><button class="tab head">Home</button></a>
-                <a href="products.html"><button class="tab head">Products</button></a>
-                <a href="index.html"><button class="tab head">Offers</button></a> 
-                <a href="index.html"><button class="tab head">Reviews</button></a>
-                <a href="index.html"><button class="tab head">About Us</button></a> 
-                <input type="text" placeholder="Search" class="search head">  
-                <a href="login.html"><img src="vector-img/icons8-user-48.png" style="max-height: 25px;" class="vector head"></a>
-                <a href="register.html"><img src="vector-img/icons8-sleigh-64.png" style="max-height: 30px;" class="vector head"></a>
-            </nav> 
-                 <img src="homepage-img/golden-ribbon.PNG" style="max-width: 100%;" class="ribbon-bottom head">
-                 <div class="header-img"><img src="product-img/header2.png" style="max-width: 100%;" alt="">
-                    <figcaption class="logotype">S H</figcaption>
-                </div>
-        </header>
-    </div>
-    <div class="content">
-        <div class="headline">
-            <h1>Santas Christmas Selection</h1>
-            <hr>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="index.html"><button class="tab">Home</button></a>
+        <a href="products.html"><button class="tab">Products</button></a>
+        <a href="index.html"><button class="tab">Contact</button></a>
+
+        <a href="register.html" class="login"
+          ><img src="vector-img/user.png"
+        /></a>
+        <a href="login.html" class="sleigh"
+          ><img src="vector-img/sleigh.png"
+        /></a>
+
+        <div class="search-bar">
+          <input id="search-toggle" type="checkbox" />
+          <label for="search-toggle">
+            <img
+              class="search-icon"
+              src="vector-img/search.png"
+              alt="click here to search"
+            />
+          </label>
+          <input class="search" placeholder="search" />
         </div>
-        <div class="products">
-            <div class="frame1"><a href="detail.html"><img src="product-img/pecan.png" style="max-height: 400px"></a><p class=frame-text>Brûléed Pecan Pie</p></div>
-            <div class="frame2"><img src="product-img/lingon.png" style="max-height: 400px"><p class=frame-text>Cognac and Lingonberry Cake</p></div>
-            <div class="frame3"><img src="product-img/pudding.png" style="max-height: 400px"><p class=frame-text>Brûléed Toffe Pudding</p></div>
-            <div class="frame4"><img src="product-img/ginger-cake.png" style="max-height: 400px"><p class=frame-text>Gingerbread Cake</p></div>
-            <div class="frame5"><img src="product-img/praline.png" style="max-height: 400px"><p class=frame-text>Frosted Coconut Pralines</p></div>
-            <div class="frame6"><img src="product-img/lusse.png" style="max-height: 400px"><p class=frame-text>Saffran-buns</p></div>
-            <div class="frame7"><img src="product-img/pannetone.png" style="max-height: 400px"><p class=frame-text>Mrs Claus' Pannetone</p></div>
-            <div class="frame8"><img src="product-img/ginger-house.png" style="max-height: 400px"><p class=frame-text>Custom Gingerbread House</p></div>            
-            <div class="frame9"><img src="product-img/kids.png" style="max-height: 400px"><p class=frame-text>Cookie-mix</p></div>
-            <div class="frame10"><img src="product-img/tiram.png" style="max-height: 400px"><p class=frame-text>Tiramisu</p></div>
+
+        <div class="menue">
+          <input id="menue-toggle" type="checkbox" />
+          <label for="menue-toggle">
+            <img
+              class="menue-icon"
+              src="homepage-img/menue.png"
+              alt="hamburger menue"
+            />
+          </label>
+          <ul class="menue-list">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Contact</li>
+          </ul>
         </div>
+      </nav>
+      <main>
+        <img src="homepage-img/header-pum.jpg" alt="baking pumpkin pastries" />
+      </main>
+      <div class="item1">
+        <img class="items" src="homepage-img/pecan.png" alt="pecan pie" />
+      </div>
+      <div class="item2">
+        <img class="items" src="product-img/pannetone.png" alt="pannetone" />
+      </div>
+      <div class="item3">
+        <img class="items" src="product-img/pudding.png" alt="pudding" />
+      </div>
+      <div class="item4">
+        <img
+          class="items"
+          src="product-img/gingerbread-cake.png"
+          alt="gingerbread cake"
+        />
+      </div>
+      <div class="item5">
+        <img
+          class="items"
+          src="product-img/lingonberry-cake.png"
+          alt="lingon berry cake"
+        />
+      </div>
+      <div class="item6">
+        <img class="items" src="product-img/lussekatt.png" alt="lusse katter" />
+      </div>
+      <div class="item7">
+        <img
+          class="items"
+          src="product-img/pralines.png"
+          alt="snowball chocolate praline"
+        />
+      </div>
+      <div class="item8">
+        <img
+          class="items"
+          src="product-img/gingerbread-house.png"
+          alt="gingerbread houses"
+        />
+      </div>
+      <div class="item9">
+        <img class="items" src="product-img/tiramisu.png" alt="tiramisu" />
+      </div>
+      <div class="item10">
+        <img class="items" src="product-img/cookies.png" alt="sugar-cookies" />
+      </div>
+      <footer class="footer">
+        <p>
+          Where to find us: <br />
+          221B Bakerstreet
+        </p>
+        <p>
+          Reach us by phone: <br />
+          07-XXXXXXX
+        </p>
+      </footer>
     </div>
-    <div class="footer">
-        <img src="homepage-img/golden-ribbon.PNG" style="max-width: 100%;" class="ribbon-top"> 
-        <div class="info">
-            <div class="location"><p>Where to find us: <br>
-            221B Bakerstreet</p></div>
-            <div class="nr"><p>Reach us by phone: <br>
-                07-XXXXXXX</p></div>
-    </div>
+  </body>
+</html>
