@@ -24,6 +24,7 @@ nav {
   grid-area: nav;
   vertical-align: middle;
 }
+
 main {
   grid-area: main;
 }
