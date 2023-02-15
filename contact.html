@@ -8,26 +8,49 @@
     <title>Home - Santa's little helpers</title>
 </head>
 <body>
-    <main class="grid"> 
-    <div class="header">
-        <header>      
-                 <img src="homepage-img/golden-ribbon.PNG" style="max-width: 100%;" class="ribbon-top head">  
-            <nav>            
-                <a href="index.html"><button class="tab head">Home</button></a>
-                <a href="products.html"><button class="tab head">Products</button></a>
-                <a href="index.html"><button class="tab head">Offers</button></a> 
-                <a href="index.html"><button class="tab head">Reviews</button></a>
-                <a href="index.html"><button class="tab head">Contact</button></a> 
-                <input type="text" placeholder="Search" class="search head">  
-                <a href="login.html"><img src="vector-img/icons8-user-48.png" style="max-height: 25px;" class="vector head"></a>
-                <a href="cart.html"><img src="vector-img/icons8-sleigh-64.png" style="max-height: 30px;" class="vector head"></a>
-            </nav> 
-                 <img src="homepage-img/golden-ribbon.PNG" style="max-width: 100%;" class="ribbon-bottom head">
-                 <div class="header-img"><img src="homepage-img/headerl.png" style="max-width: 100%;" alt=""></div>
-        </header>
-    </div>
-    <div class="content">
-        <div class="headline">
-            <h1>Made with care</h1>
-            <hr>
-        </div>
+    <div class="container">
+        <nav>
+          <a href="index.html"><button class="tab">Home</button></a>
+          <a href="products.html"><button class="tab">Products</button></a>
+          <a href="contact.html"><button class="tab">Contact</button></a>
+  
+          <a href="register.html" class="login"
+            ><img src="vector-img/user.png"
+          /></a>
+          <a href="login.html" class="sleigh"
+            ><img src="vector-img/sleigh.png"
+          /></a>
+  
+          <div class="search-bar">
+            <input id="search-toggle" type="checkbox" />
+            <label for="search-toggle">
+              <img
+                class="search-icon"
+                src="vector-img/search.png"
+                alt="click here to search"
+              />
+            </label>
+            <input class="search" placeholder="search" />
+          </div>
+  
+          <div class="menue">
+            <input id="menue-toggle" type="checkbox" />
+            <label for="menue-toggle">
+              <img
+                class="menue-icon"
+                src="homepage-img/menue.png"
+                alt="hamburger menue"
+              />
+            </label>
+            <ul class="menue-list">
+              <li>Home</li>
+              <li>Products</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </nav>
+        <main>
+            <img class="header" src="homepage-img/orange.jpg" alt="orange pie" />
+          </main>
+          <div class="item1">
+            <img class="items" class="product-img" src="homepage-img/pecan.png" alt="pecan pie"/>
