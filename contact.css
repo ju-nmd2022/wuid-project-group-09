@@ -75,15 +75,7 @@ body {
 
   
   
-  #search-toggle {
-    display: none;
-  }
-  #search-toggle:checked ~ .search {
-    display: block;
-  }
-  .menue {
-    display: none;
-  }
+ 
 
   .overlay1 {
     position: absolute;
@@ -295,3 +287,13 @@ textarea:valid+label {
     height: 38px;
   }
 }
+
+#search-toggle {
+    display: none;
+  }
+  #search-toggle:checked ~ .search {
+    display: block;
+  }
+  .menue {
+    display: none;
+  }
