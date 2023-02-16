@@ -16,10 +16,12 @@ body {
     "footer";
   gap: 0.5rem;
   }
-    nav {
-    background-color: #801710;
-    grid-area: nav;
+  nav {
+  background-color: #801710;
+  grid-area: nav;
   vertical-align: middle;
+  position: fixed;
+  top: 0;
   }
   main {
     grid-area: main;
@@ -28,7 +30,7 @@ body {
     background-color: #801710;
     grid-area: footer;
     position: fixed;
-    bottom: 0%;
+    bottom: 0;
   }
 
   button:hover {
