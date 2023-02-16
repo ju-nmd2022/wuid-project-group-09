@@ -50,10 +50,6 @@ body {
   vertical-align: middle;
   }
   
-  {
-  margin: 0;
-  box-sizing: border-box;
-  }
   #contact {
   background-color: #6a9ac4;
   display: flex;
