@@ -42,6 +42,23 @@ body {
     transform-style: ease-in;
     opacity: 0;
   }
+  .tab {
+    background-color: #ffffff5e;
+    border: #ebebeb5e;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: medium;
+    font-family: "Times New Roman", Times, serif;
+    color: #ffffff;
+    cursor: pointer;
+    vertical-align: middle;
+  }
   /*
   main > img {
     width: 600px;
