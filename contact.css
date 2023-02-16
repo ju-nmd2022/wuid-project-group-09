@@ -10,13 +10,8 @@ body {
     grid-auto-flow: dense;
     gap: 0.5rem;
   }
-  main {
-    grid-area: main;
-    justify-content: center;
-  }
-  nav {
+    nav {
     background-color: #801710;
-    grid-template-areas: "nav";
   }
 
   button:hover {
