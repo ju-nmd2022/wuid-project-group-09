@@ -72,9 +72,8 @@ body {
     color: #ffffff;
   }
 
-  #search-toggle:checked ~ .search {
-    display: block;
-  }
+  
+  
   #search-toggle {
     display: none;
   }
