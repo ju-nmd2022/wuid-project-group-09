@@ -23,8 +23,7 @@ body {
   } */
   nav {
     background-color: #801710;
-    grid-area: nav;
-    vertical-align: middle;
+    display: flex;
   }
 
   button:hover {
@@ -136,7 +135,7 @@ body {
 }
 
 .contact-form-wrapper {
-  background-color: #ffffff8f;
+  background-color: #801710;
   border-radius: 0 10px 10px 0;
 }
 
