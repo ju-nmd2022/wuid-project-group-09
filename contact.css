@@ -24,6 +24,7 @@ body {
   nav {
     background-color: #801710;
     display: flex;
+    position: absolute;
   }
 
   button:hover {
