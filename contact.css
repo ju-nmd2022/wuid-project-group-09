@@ -25,6 +25,8 @@ body {
   footer {
     background-color: #801710;
     grid-area: footer;
+    position: fixed;
+    bottom: 0%;
   }
 
   button:hover {
