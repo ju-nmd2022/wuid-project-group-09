@@ -6,12 +6,25 @@ body {
 
 .container {
     display: grid;
-    position: relative;
-    grid-auto-flow: dense;
+    grid-template-columns: 1fr  1fr 1fr;
+  grid-template-rows: 0.2fr 1.2fr 0.4fr;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
     gap: 0.5rem;
   }
     nav {
     background-color: #801710;
+    grid-area: nav;
+  vertical-align: middle;
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    background-color: #801710;
+    grid-area: footer;
   }
 
   button:hover {
