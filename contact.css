@@ -7,7 +7,7 @@ body {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.4fr 1.2fr 0.4fr;
+    grid-template-rows: 0.2fr 1.2fr 0.4fr;
     grid-template-areas:
       "nav nav nav nav"
       "main main main main"
@@ -30,6 +30,8 @@ body {
     color: #bad9a6;
   }
   main > img {
+    width: 600px;
+    height: auto;
     border-radius: 1rem;
   }
   .tab {
