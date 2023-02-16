@@ -69,26 +69,25 @@
                       </div>
                     </div>
                   </div>
-                    <div class="contact-form-wrapper">
-                        <form action="results.html" method="GET" enctype="multipart/form-data">
-                            <div>
-                                <label for="name">Name</label>
-                                <input type="text" name="name" id="name" required>
-                            </div>
-                            <div>
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email" required>
-                            </div>
-                            <div>
-                                <label for="Message">Message</label>
-                                <input type="text" name="message" id="message" required>
-                            </div>
-                            <button type="reset">Reset</button>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                    </div>
-            </section>
+                  <div class="contact-form-wrapper">
+                    <form>
+                      <div class="form-item">
+                        <input type="text" name="sender" required>
+                        <label>Name:</label>
+                      </div>
+                      <div class="form-item">
+                        <input type="text" name="email" required>
+                        <label>Email:</label>
+                      </div>
+                      <div class="form-item">
+                        <textarea class="" name="message" required></textarea>
+                        <label>Message:</label>
+                      </div>
+                      <button class="submit-btn">Send</button>  
+                    </form>
+                  </div>
+                </div>
+              </section>
         </main>
         <footer class="footer">
             <p> Where to find us: <br /> 221B Bakerstreet</p>
