@@ -7,21 +7,13 @@ body {
 .container {
     display: grid;
     position: relative;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.2fr 0.4fr;
-    grid-template-areas:
-      "nav"
-      "main"
-      "footer";
+    grid-auto-flow: dense;
     gap: 0.5rem;
   }
   main {
     grid-area: main;
     justify-content: center;
   }
-  .sidebar {
-    grid-area: sidebar;
-  } 
   nav {
     background-color: #801710;
     grid-template-areas: "nav";
@@ -29,19 +21,6 @@ body {
 
   button:hover {
     color: #bad9a6;
-  }
-  .overlay1 {
-    position: absolute;
-    background-color: #2a252542;
-    top: 128%;
-    left: 2.2%;
-    width: 21.2%;
-    height: 46%;
-    color: #ffffff;
-    transition: 0.5s;
-    transition-delay: 0.1s;
-    transform-style: ease-in;
-    opacity: 0;
   }
   .tab {
     background-color: #ffffff5e;
