@@ -6,6 +6,7 @@ body {
 
 .container {
     display: grid;
+    position: relative;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1.2fr 0.4fr;
     grid-template-areas:
@@ -118,6 +119,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 
 .contact-box {
