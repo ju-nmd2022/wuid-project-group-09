@@ -13,32 +13,21 @@ body {
     grid-template-areas:
       "nav nav nav nav"
       "main main main main"
-      "item1 item2 item3 item4"
       "footer footer footer footer";
     gap: 0.5rem;
   }
-  
+  main {
+    grid-area: main;
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
   nav {
     background-color: #801710;
     grid-area: nav;
     vertical-align: middle;
   }
-  .sleigh {
-    float: right;
-    padding-right: 1rem;
-    padding-top: 0.3rem;
-    padding-left: 1rem;
-  }
-  .login {
-    float: right;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-  }
-  
-  footer > p {
-    color: #ffffff;
-    padding-left: 1rem;
-  }
+
   button:hover {
     color: #bad9a6;
   }
@@ -64,4 +53,50 @@ body {
     color: #ffffff;
     cursor: pointer;
     vertical-align: middle;
+  }
+  .sleigh {
+    float: right;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    padding-left: 1rem;
+  }
+  .login {
+    float: right;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+  }
+  
+  footer > p {
+    color: #ffffff;
+    padding-left: 1rem;
+  }
+  ::placeholder {
+    color: #ffffff;
+  }
+
+  #search-toggle:checked ~ .search {
+    display: block;
+  }
+  #search-toggle {
+    display: none;
+  }
+  #search-toggle:checked ~ .search {
+    display: block;
+  }
+  .menue {
+    display: none;
+  }
+
+  .overlay1 {
+    position: absolute;
+    background-color: #2a252542;
+    top: 128%;
+    left: 2.2%;
+    width: 21.2%;
+    height: 46%;
+    color: #ffffff;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+    transform-style: ease-in;
+    opacity: 0;
   }
